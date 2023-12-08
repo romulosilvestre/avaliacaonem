@@ -52,6 +52,7 @@ namespace WebApplication4.Controllers
                 Tipo = c.Tipo == TipoConsulta.Eletiva ? "Eletiva" : "Urgência"
             })
                               .ToList();
+                              /*testando git*/
 
             ViewBag.NumeroPagina = pagina;
             ViewBag.TotalPaginas = Math.Ceiling((decimal)consultas.Count() / TAMANHO_PAGINA);
